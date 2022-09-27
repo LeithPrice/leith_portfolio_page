@@ -1,15 +1,35 @@
 import * as React from "react";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
-import { NavLink  } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar(props) {
   const { title, sections } = props;
   return (
     <React.Fragment>
+        
+       <Navbar bg="dark" variant={"dark"} expand="lg">
+            <Navbar.Brand href="/">{title}</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+                <Nav
+                    className="mr-auto my-2 my-lg-0"
+                    style={{ maxHeight: '100px' }}
+                    navbarScroll
+                >
+                    {sections.map((section) => (
+                    <NavLink key={section.title} to={section.url}>
+                  {section.title}     
+                </NavLink>
+              ))}
+                </Nav>
+             </Navbar.Collapse>
+        </Navbar>
+
+
       
-        <Navbar  bg="dark" variant="dark">
+        {/* <Navbar  bg="dark" variant="dark">
           <Container>
             <Navbar.Brand href="/">{title}</Navbar.Brand>
             </Container>
@@ -24,14 +44,14 @@ function NavBar(props) {
               ))}
             </Nav>
           </Container>
-        </Navbar>
+        </Navbar> */}
     </React.Fragment>
   );
 }
 
 export default NavBar;
 
-// import React, { Component } from 'react'
+// // import React, { Component } from 'react'
 // import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
 // import {
 //     BrowserRouter as Router,
