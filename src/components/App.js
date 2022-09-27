@@ -53,8 +53,9 @@ function MainPage() {
           title="Leith Price Portfolio page"
           sections={sections}
         ></NavBar>
-      
+      </Container>
 
+      <Container>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
@@ -64,13 +65,12 @@ function MainPage() {
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </Container>
 
-      <Footer
-        title={"Thank you for visiting my website."}
-        description={
-          "Feel free to reach out"
-        }
-      ></Footer>
+      <Container>
+      <Footer>
+
+      </Footer>
       </Container>
     </div>
   );
