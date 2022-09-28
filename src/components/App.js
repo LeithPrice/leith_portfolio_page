@@ -33,7 +33,7 @@ const sections = [
   },
   {
     title: "Home",
-    url: "/",
+    url: "/home",
   },
   {
     title: "Contact",
@@ -57,7 +57,7 @@ function MainPage() {
 
       <Container>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="reviews" element={<Reviews />} />
