@@ -61,7 +61,6 @@ function LoadingPage() {
 
 function MainPage() {
  
-
   return (
     <div className="App">
       <Container>

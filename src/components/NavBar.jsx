@@ -18,7 +18,7 @@ function NavBar(props) {
           {title}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" style={{ paddingLeft:"10px"}}>
           <Nav
             className="mr-auto my-2 my-lg-0"
             style={{ maxHeight: "100px", justifyContent: "space-between" }}
