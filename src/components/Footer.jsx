@@ -12,7 +12,7 @@ function Copyright() {
 const Footer = (props) => {
   return (
     <div>
-      <footer class="text-center text-lg-start bg-light text-muted">
+      <footer class="text-center text-lg-start text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div class="me-5 d-none d-lg-block">
             <span>Get connected with me on social networks:</span>
@@ -25,7 +25,7 @@ const Footer = (props) => {
               rel="noreferrer"
               class="me-4 text-reset"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f" ></i>
             </a>
             <a
               href="https://www.github.com/LeithPrice "
@@ -129,7 +129,7 @@ const Footer = (props) => {
 
         <div
           class="text-center p-4"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
         >
           <Copyright />
           <a class="text-reset fw-bold" href="https://leithprice.netlify.app/">

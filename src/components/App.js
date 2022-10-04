@@ -10,7 +10,9 @@ import { React, useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
+import MainImage from "./MainImage";
 import { Routes, Route } from "react-router-dom";
+import Image from "../Images/cool-background.png"
 
 const sections = [
   {
@@ -63,6 +65,7 @@ function MainPage() {
  
   return (
     <div className="App">
+      <div style={{ backgroundImage: 'url(' + Image + ')'}}>
       <Container>
         <NavBar title="Leith Price Portfolio Page" sections={sections}></NavBar>
       </Container>
@@ -86,7 +89,7 @@ function MainPage() {
           <div
             class="text-center p-4"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
-            
+            <MainImage></MainImage>
           </div>
         </section>
       </Container>
@@ -94,6 +97,7 @@ function MainPage() {
       <Container>
         <Footer></Footer>
       </Container>
+    </div>
     </div>
   );
 }
