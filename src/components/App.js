@@ -65,7 +65,7 @@ function MainPage() {
  
   return (
     <div className="App">
-      <div style={{ backgroundImage: 'url(' + Image + ')'}}>
+      <div style={{ backgroundImage: 'url(' + Image + ')', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%'}}>
       <Container>
         <NavBar title="Leith Price Portfolio Page" sections={sections}></NavBar>
       </Container>
