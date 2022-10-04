@@ -54,54 +54,55 @@ const Footer = (props) => {
                   <i class="fas fa-gem me-3"></i>Leith Price Portfolio
                 </h6>
                 <p>
-                  Thank you for visiting my webpage, Please feel free to look through my other socials or send me an email.
+                  Thank you for visiting my webpage, Please feel free to look
+                  through my other socials or send me an email.
                 </p>
               </div>
 
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <h6 class="text-uppercase fw-bold mb-4">Languages</h6>
                 <p>
                   <a href="#!" class="text-reset">
-                    Angular
+                    Ruby
                   </a>
                 </p>
                 <p>
                   <a href="#!" class="text-reset">
-                    React
+                    HTML5
                   </a>
                 </p>
                 <p>
                   <a href="#!" class="text-reset">
-                    Vue
+                    CSS(SASS)
                   </a>
                 </p>
                 <p>
                   <a href="#!" class="text-reset">
-                    Laravel
+                    Javascript
                   </a>
                 </p>
               </div>
 
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <h6 class="text-uppercase fw-bold mb-4">Frameworks and Libraries</h6>
                 <p>
                   <a href="#!" class="text-reset">
-                    Pricing
+                    Ruby on Rails
                   </a>
                 </p>
                 <p>
                   <a href="#!" class="text-reset">
-                    Settings
+                    React.js
                   </a>
                 </p>
                 <p>
                   <a href="#!" class="text-reset">
-                    Orders
+                    Bootstrap 5
                   </a>
                 </p>
                 <p>
                   <a href="#!" class="text-reset">
-                    Help
+                    Node.js
                   </a>
                 </p>
               </div>
@@ -109,14 +110,14 @@ const Footer = (props) => {
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <i class="fas fa-home me-3"></i> New York, NY 10012, US
+                  <i class="fas fa-home me-3"></i> Brisbane, QLD 4503
                 </p>
                 <p>
                   <i class="fas fa-envelope me-3"></i>
-                  info@example.com
+                  leith.price@gmail.com
                 </p>
                 <p>
-                  <i class="fas fa-phone me-3"></i> + 01 234 567 88
+                  <i class="fas fa-phone me-3"></i> +61 421 547 423
                 </p>
                 <p>
                   <i class="fas fa-print me-3"></i> + 01 234 567 89
@@ -128,13 +129,10 @@ const Footer = (props) => {
 
         <div
           class="text-center p-4"
-          style={{ backgroundcolor: "rgba(0, 0, 0, 0.05)" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
         >
           <Copyright />
-          <a
-            class="text-reset fw-bold"
-            href="https://www.leithprice.netlify.app/"
-          >
+          <a class="text-reset fw-bold" href="https://leithprice.netlify.app/">
             Leithprice.netlify.app
           </a>
         </div>
