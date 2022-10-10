@@ -1,78 +1,155 @@
 import React from "react";
+import Image1 from "../Images/Original_portfolio_page.png";
+import Image2 from "../Images/Terminal_app.png";
+import Image3 from "../Images/Revonate_rails_app.png";
+import Image4 from "../Images/React_portfolio_app.png";
 
 const Portfolio = () => {
   return (
     <section class="d-flex flex-wrap justify-content-center text-center  mt-5">
       <div class="row">
-        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4">
-          <h1>Blog One</h1>
-          <h3>Will Dogs Ever Rule The World?</h3>
-          <div class="image">
-            <img src="/images/Dog.jfif" alt="one"></img>
+        <div
+          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          <div
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+            class="mt-3"
+          >
+            <h1>Project One</h1>
+            <h3>HTML Portfolio Page</h3>
           </div>
-          <p>Dec 7, 2017</p>
+          <div class="image">
+            <img src={Image1} alt="one" class="img-fluid"></img>
+          </div>
+          <a
+            href="https://github.com/LeithPrice/Initial_Portfolio_Webpage"
+            target="_blank"
+            rel="noreferrer"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
+            This was an excellent opportunity to show what i had learned at
+            Coder academy. Creating a Portfolio webpage that had responsive
+            design allowed me to showcase my skills in HTML, CSS and SASS
           </p>
         </div>
-        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4">
-          <h1>Blog Two</h1>
-          <h3>Barbwire: Expectations vs. Reality</h3>
-          <div class="image">
-            <img src="/images/barb_wire.jpg" alt="one"></img>
+        <div
+          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          <div
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+            class="mt-3"
+          >
+            <h1>Project Two</h1>
+            <h3>Workshop Software Terminal App</h3>
           </div>
-          <p>Sep 2, 2017</p>
+          <div class="image">
+            <img src={Image2} class="img-fluid" alt="one"></img>
+          </div>
+          <a
+            href="https://github.com/LeithPrice/Workshop_Terminal_App"
+            target="_blank"
+            rel="noreferrer"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
+            A terminal based workshop management software that allows users to
+            input customer and vehicle details which are permanently saved in a
+            .txt file for ongoing use and then print to screen sales invoices
+            for work performed.
           </p>
         </div>
-        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4">
-          <h1>Blog Three</h1>
-          <h3>The Next Big Thing in Carnival Rides</h3>
-          <div class="image">
-            <img src="/images/carnivalride.jfif" alt="one"></img>
+        <div
+          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          <div
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+            class="mt-3"
+          >
+            <h1>Project Three</h1>
+            <h3>A marketplace app written in Ruby on Rails</h3>
           </div>
-          <p>July 9, 2017</p>
+          <div class="image">
+            <img src={Image3} class="img-fluid" alt="one"></img>
+          </div>
+          <a
+            href="https://github.com/LeithPrice/Revonate_Rails_App "
+            target="_blank"
+            rel="noreferrer"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
+            A prototype two-sided marketplace in which users can buy and sell
+            project cars that require repair. Features include account set up
+            and authentication using Devise ruby gem, listing uploads including
+            photos and buy / sell history. Authorisation protocols are also in
+            place for restricted CRUD actions.
           </p>
         </div>
-        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4">
-          <h1>Blog Four</h1>
-          <h3>20 Myths about Fish: Busted</h3>
-          <div class="image">
-            <img src="/images/FISH.jfif" alt="one"></img>
+        <div
+          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          <div
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+            class="mt-3"
+          >
+            <h1>Project Four</h1>
+            <h3>An updated Portfolio page using Reactjs</h3>
           </div>
-          <p>Apr 13, 2017</p>
+          <div class="image">
+            <img src={Image4} class="img-fluid" alt="one"></img>
+          </div>
+          <a
+            href="https://github.com/LeithPrice/leith_portfolio_page "
+            target="_blank"
+            rel="noreferrer"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
+            My current Portfolio page was an excellent opportunity to show my
+            knowledge with Vanilla Javascript, React and Bootstrap. With my
+            understanding of HTML and CSS, i am happy with the final product.
           </p>
         </div>
-        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4">
-          <h1>Blog Five</h1>
-          <h3>The Top Reasons People Succeed in the Ambulance Industry</h3>
-          <div class="image">
-            <img src="/images/ambulance2.jfif" alt="one"></img>
+        <div
+          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          <div
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+            class="mt-3"
+          >
+            <h1>Project Five</h1>
+            <h3>Full Stack project</h3>
           </div>
-          <p>Jan 14, 2017</p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
+          <div class="image">
+            <img
+              src="/images/ambulance2.jfif"
+              class="img-fluid"
+              alt="one"
+            ></img>
+          </div>
+          <a
+            href="https://www.github.com/LeithPrice "
+            target="_blank"
+            rel="noreferrer"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <p>To Be Completed, Will be updated November 28th 2022.</p>
         </div>
       </div>
     </section>
