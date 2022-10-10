@@ -69,7 +69,7 @@ function Contact() {
       id="contact"
       class="d-flex flex-wrap justify-content-center border-bottom "
     >
-      <div class=" p-4 ">
+      <div class>
         <h2>Contact</h2>
 
         <form>
