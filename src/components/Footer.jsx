@@ -25,7 +25,7 @@ const Footer = (props) => {
               rel="noreferrer"
               class="me-4 text-reset"
             >
-              <i class="fab fa-facebook-f" ></i>
+              <i class="fab fa-facebook-f"></i>
             </a>
             <a
               href="https://www.github.com/LeithPrice "
@@ -62,46 +62,78 @@ const Footer = (props) => {
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Languages</h6>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Ruby_(programming_language)"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset"
+                  >
                     Ruby
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a
+                    href="https://en.wikipedia.org/wiki/HTML"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset"
+                  >
                     HTML5
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a
+                    href="https://en.wikipedia.org/wiki/CSS"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset"
+                  >
                     CSS(SASS)
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="https://en.wikipedia.org/wiki/JavaScript"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset">
                     Javascript
                   </a>
                 </p>
               </div>
 
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Frameworks and Libraries</h6>
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Frameworks and Libraries
+                </h6>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset">
                     Ruby on Rails
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset">
                     React.js
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset">
                     Bootstrap 5
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="https://en.wikipedia.org/wiki/Node.js"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-reset">
                     Node.js
                   </a>
                 </p>
@@ -114,13 +146,11 @@ const Footer = (props) => {
                 </p>
                 <p>
                   <i class="fas fa-envelope me-3"></i>
-                  leith.price@gmail.com
+                  <a href="mailto:leith.price@gmail.com" class="text-reset">leith.price@gmail.com</a>
                 </p>
                 <p>
-                  <i class="fas fa-phone me-3"></i> +61 421 547 423
-                </p>
-                <p>
-                  <i class="fas fa-print me-3"></i> + 01 234 567 89
+                  <i class="fas fa-phone me-3"></i> 
+                  <a href="tel:0421547423" class="text-reset">+61 421 547 423</a>
                 </p>
               </div>
             </div>
