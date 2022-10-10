@@ -65,12 +65,12 @@ function MainPage() {
           backgroundImage: "url(" + Image2 + ")",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
-          linearGradient: "(#eb01a5, #d13531)",
+        
         }}
       >
         <Container>
           <NavBar
-            title="Leith Price Portfolio "
+            title="Leith Price"
             sections={sections}
           ></NavBar>
         </Container>
@@ -79,7 +79,7 @@ function MainPage() {
           <section class="d-flex flex-wrap justify-content-around border-bottom ">
             <div
               class="text-center p-4 w-100"
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+            
             >
               <Routes>
                 <Route path="/" element={<Home />} />
