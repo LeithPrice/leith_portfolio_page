@@ -77,7 +77,7 @@ function MainPage() {
         <Container>
           <section class="d-flex flex-wrap justify-content-around border-bottom ">
             <div
-              class="text-center p-4"
+              class="text-center p-4 w-100"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
             >
               <Routes>
