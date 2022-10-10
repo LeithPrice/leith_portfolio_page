@@ -1,7 +1,5 @@
 import * as React from "react";
-
 import { Navbar, Nav } from "react-bootstrap";
-
 import { Link } from "react-router-dom";
 
 function NavBar(props) {
@@ -9,12 +7,11 @@ function NavBar(props) {
   return (
     <React.Fragment>
       <Navbar
-        bg="dark"
-        variant={"dark"}
+        variant={"light"}
         expand="lg"
-        style={{ justifyContent: "space-between" }}
+        style={{ justifyContent: "space-between", backgroundColor: "transparent", paddingTop: "10px"}}
       >
-        <Navbar.Brand href="/" style={{ padding: "10px" }}>
+        <Navbar.Brand href="/" style={{ padding: "10px", color: "Black", fontSize: "40px" }}>
           {title}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

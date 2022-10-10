@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
-import Image from "../Images/cool-background.png";
+import Image2 from "../Images/2nd_background_image.jpeg";
 
 const sections = [
   {
@@ -46,7 +46,7 @@ function LoadingPage() {
       <header class="text-center text-lg-start bg-light text-muted">
         <section class="d-flex flex-wrap justify-content-around border-bottom ">
           <div>
-            <h1>Leith Price Portfolio Page</h1>
+            <h1>Leith Price Portfolio</h1>
           </div>
           <div>
             <h1>Loading...</h1>
@@ -62,14 +62,15 @@ function MainPage() {
     <div className="App">
       <div
         style={{
-          backgroundImage: "url(" + Image + ")",
+          backgroundImage: "url(" + Image2 + ")",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
+          linearGradient: "(#eb01a5, #d13531)",
         }}
       >
         <Container>
           <NavBar
-            title="Leith Price Portfolio Page"
+            title="Leith Price Portfolio "
             sections={sections}
           ></NavBar>
         </Container>

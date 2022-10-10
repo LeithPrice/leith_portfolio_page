@@ -9,7 +9,7 @@ const Portfolio = () => {
     <section class="d-flex flex-wrap justify-content-center text-center  mt-5">
       <div class="row">
         <div
-          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
@@ -37,7 +37,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
@@ -66,7 +66,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
@@ -96,7 +96,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
@@ -124,7 +124,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 border"
+          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
