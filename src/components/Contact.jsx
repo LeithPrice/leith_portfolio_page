@@ -69,8 +69,8 @@ function Contact() {
       id="contact"
       class="d-flex flex-wrap justify-content-center border-bottom "
     >
-      <div class>
-        <h2>Contact</h2>
+      <div class=" p-4 ">
+        <h2>Please complete contact form.</h2>
 
         <form>
           <label>Name: </label>

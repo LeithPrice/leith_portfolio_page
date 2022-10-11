@@ -29,7 +29,7 @@ const Home = () => {
           </div>
           <div class="col-md-12 col-lg-12 col-xl-12 mx-auto mb-4">
             <div class="mt-3">
-              <h1>Welcome to my webpage</h1>
+              <h1>Welcome to my Webpage</h1>
             </div>
           </div>
         </div>

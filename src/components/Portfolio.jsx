@@ -28,7 +28,7 @@ const Portfolio = () => {
             rel="noreferrer"
             class="me-4 text-reset"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github"> Github Repository</i>
           </a>
           <p>
             This was an excellent opportunity to show what i had learned at
@@ -56,7 +56,7 @@ const Portfolio = () => {
             rel="noreferrer"
             class="me-4 text-reset"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github"> Github Repository</i>
           </a>
           <p>
             A terminal based workshop management software that allows users to
@@ -85,7 +85,7 @@ const Portfolio = () => {
             rel="noreferrer"
             class="me-4 text-reset"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github"> Github Repository</i>
           </a>
           <p>
             A prototype two-sided marketplace in which users can buy and sell
@@ -115,7 +115,7 @@ const Portfolio = () => {
             rel="noreferrer"
             class="me-4 text-reset"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github"> Github Repository</i>
           </a>
           <p>
             My current Portfolio page was an excellent opportunity to show my
@@ -147,7 +147,7 @@ const Portfolio = () => {
             rel="noreferrer"
             class="me-4 text-reset"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github"> Github Repository</i>
           </a>
           <p>To Be Completed, Will be updated November 28th 2022.</p>
         </div>
