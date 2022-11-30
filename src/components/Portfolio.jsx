@@ -6,29 +6,29 @@ import Image4 from "../Images/React_portfolio_app.png";
 
 const Portfolio = () => {
   return (
-    <section class="d-flex flex-wrap justify-content-center text-center  mt-5">
-      <div class="row">
+    <section className="d-flex flex-wrap justify-content-center text-center  mt-5">
+      <div className="row">
         <div
-          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
+          className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-            class="mt-3"
+            className="mt-3"
           >
             <h1>Project One</h1>
             <h3>HTML Portfolio Page</h3>
           </div>
-          <div class="image">
-            <img src={Image1} alt="one" class="img-fluid"></img>
+          <div className="image">
+            <img src={Image1} alt="one" className="img-fluid"></img>
           </div>
           <a
             href="https://github.com/LeithPrice/Initial_Portfolio_Webpage"
             target="_blank"
             rel="noreferrer"
-            class="me-4 text-reset"
+            className="me-4 text-reset"
           >
-            <i class="fab fa-github"> Github Repository</i>
+            <i className="fab fa-github"> Github Repository</i>
           </a>
           <p>
             This was an excellent opportunity to show what i had learned at
@@ -37,26 +37,26 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
+          className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-            class="mt-3"
+            className="mt-3"
           >
             <h1>Project Two</h1>
             <h3>Workshop Software Terminal App</h3>
           </div>
-          <div class="image">
-            <img src={Image2} class="img-fluid" alt="one"></img>
+          <div className="image">
+            <img src={Image2} className="img-fluid" alt="one"></img>
           </div>
           <a
             href="https://github.com/LeithPrice/Workshop_Terminal_App"
             target="_blank"
             rel="noreferrer"
-            class="me-4 text-reset"
+            className="me-4 text-reset"
           >
-            <i class="fab fa-github"> Github Repository</i>
+            <i className="fab fa-github"> Github Repository</i>
           </a>
           <p>
             A terminal based workshop management software that allows users to
@@ -66,26 +66,26 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
+          className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-            class="mt-3"
+            className="mt-3"
           >
             <h1>Project Three</h1>
             <h3>A marketplace app written in Ruby on Rails</h3>
           </div>
-          <div class="image">
-            <img src={Image3} class="img-fluid" alt="one"></img>
+          <div className="image">
+            <img src={Image3} className="img-fluid" alt="one"></img>
           </div>
           <a
             href="https://github.com/LeithPrice/Revonate_Rails_App "
             target="_blank"
             rel="noreferrer"
-            class="me-4 text-reset"
+            className="me-4 text-reset"
           >
-            <i class="fab fa-github"> Github Repository</i>
+            <i className="fab fa-github"> Github Repository</i>
           </a>
           <p>
             A prototype two-sided marketplace in which users can buy and sell
@@ -96,26 +96,26 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
+          className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-            class="mt-3"
+            className="mt-3"
           >
             <h1>Project Four</h1>
             <h3>An updated Portfolio page using Reactjs</h3>
           </div>
-          <div class="image">
-            <img src={Image4} class="img-fluid" alt="one"></img>
+          <div className="image">
+            <img src={Image4} className="img-fluid" alt="one"></img>
           </div>
           <a
             href="https://github.com/LeithPrice/leith_portfolio_page "
             target="_blank"
             rel="noreferrer"
-            class="me-4 text-reset"
+            className="me-4 text-reset"
           >
-            <i class="fab fa-github"> Github Repository</i>
+            <i className="fab fa-github"> Github Repository</i>
           </a>
           <p>
             My current Portfolio page was an excellent opportunity to show my
@@ -124,20 +124,20 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          class="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
+          className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-            class="mt-3"
+            className="mt-3"
           >
             <h1>Project Five</h1>
             <h3>Full Stack project</h3>
           </div>
-          <div class="image">
+          <div className="image">
             <img
               src="/images/ambulance2.jfif"
-              class="img-fluid"
+              className="img-fluid"
               alt="one"
             ></img>
           </div>
@@ -145,9 +145,9 @@ const Portfolio = () => {
             href="https://www.github.com/LeithPrice "
             target="_blank"
             rel="noreferrer"
-            class="me-4 text-reset"
+            className="me-4 text-reset"
           >
-            <i class="fab fa-github"> Github Repository</i>
+            <i className="fab fa-github"> Github Repository</i>
           </a>
           <p>To Be Completed, Will be updated November 28th 2022.</p>
         </div>

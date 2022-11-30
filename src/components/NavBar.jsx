@@ -6,6 +6,7 @@ function NavBar(props) {
   const { title, sections } = props;
   return (
     <React.Fragment>
+      
       <Navbar
         variant={"light"}
         expand="lg"
@@ -21,14 +22,17 @@ function NavBar(props) {
             style={{ maxHeight: "100px", justifyContent: "space-between" }}
             navbarScroll
           >
-            {sections.map((section) => (
+            {sections.map((section, index) => (
+              <div className="row" key={"section_" + index}>
               <Nav.Link as={Link} to={section.url}>
                 {section.title}
               </Nav.Link>
+              </div>
             ))}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      
     </React.Fragment>
   );
 }

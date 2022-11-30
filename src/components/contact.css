@@ -1,0 +1,55 @@
+
+  
+  form {
+    padding: 5rem 1rem;
+        text-align: center;
+       width: 95%;
+       max-width: 400px;
+       margin: 0 auto;
+     }
+     
+     div {
+       margin: 10px;
+     }
+   
+     input,
+     select {
+       width: 100%;
+       padding: 0.65rem 0.5rem;
+       font-size: 1rem;
+       color: #4a5568;
+       border: 2px solid #4a5568;
+       border-radius: 10px;
+       outline: none;
+     }
+     
+     input:focus,
+     select:focus {
+       border-color: #1866F0;
+     }
+     
+     input::placeholder,
+     select::placeholder {
+       color: #1866F0;
+     }
+     
+   
+     
+     .submit {
+       display: center;
+       margin: 1rem 0;
+       padding: 0.35rem 0.5rem;
+       background-color: #1866F0;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       width: 170px;
+       font-size: 0.8rem;
+       cursor: pointer;
+     }
+     
+   
+     button:disabled {
+       opacity: 0.35;
+     }
+   

@@ -1,24 +1,38 @@
-import React, { useReducer } from "react";
-import reducer from "./utils/ContactReducer";
-import MessageCard from "./MessageCard";
-import ColourChoicePanel from "./ColourChoicePanel";
-import { useNavigate } from "react-router-dom";
+import React, { useReducer, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { Navigate } from "react-router-dom";
+import "./contact.css";
+import Pagetitle from "./Pagetitle";
+import { Button } from "react-bootstrap";
+import reducer from "../utils/ContactReducer";
 
-function Contact() {
-  let navigate = useNavigate();
+export default function Contact() {
+  const [shouldRedirect, setshouldRedirect] = useState(false);
 
+  useEffect(() => {
+  }, [shouldRedirect]);
+  // set state initially
   const initialState = {
-    name: "",
-    message: "",
+    firstName: "",
+    lastName: "",
     email: "",
+    contact: "",
+    treatment: "", 
+    message: "",
     userMessage: "",
-    textColour: "#f0f8ff",
-    cardColour: "#FFFFFF",
   };
 
   const [store, dispatch] = useReducer(reducer, initialState);
-  const { name, message, email, userMessage, textColour, cardColour } = store;
+  const {
+    firstName,
+    lastName,
+    message,
+    email,
+    contact,
+    userMessage,
+  } = store;
 
+  //   function for form data state change
   function handleOnChange(event) {
     dispatch({
       type: "setFormData",
@@ -26,6 +40,7 @@ function Contact() {
     });
   }
 
+  // function for Usermessage state change
   function setUserMessage(userMessage) {
     dispatch({
       type: "setUserMessage",
@@ -33,97 +48,135 @@ function Contact() {
     });
   }
 
-  function setTextColour(colour) {
-    dispatch({
-      type: "setTextColour",
-      data: colour,
-    });
+  //   function for using regex to determin if an input is in an email structure
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
   }
 
-  function setCardColour(colour) {
-    dispatch({
-      type: "setCardColour",
-      data: colour,
-    });
-  }
-
-  function handleSubmit(event) {
+  //    function for contact form submission
+  // has user input sanitisation
+  // then will link toi third party provider emailJS to send an email with the information input into the form
+  function sendEmail(event) {
     event.preventDefault();
-    if (name.length === 0) {
-      setUserMessage("Name must be provided!");
-    } else if (message.length === 0) {
-      setUserMessage("Message must be provided.");
+    if (firstName.length === 0) {
+      setUserMessage("First name must be provided!");
+    } else if (lastName.length === 0) {
+      setUserMessage("Last name must be provided!");
     } else if (email.length === 0) {
-      setUserMessage("Email must be provided.");
-    } else if (!isNaN(parseInt(message))) {
-      setUserMessage("Message must not be a number.");
-    } else if (message.toLowerCase().split(" ").join("").includes("moist")) {
-      setUserMessage("Please refrain from such language.");
+      setUserMessage("Email must be provided!");
+    } else if (!isValidEmail(email)) {
+      setUserMessage("Please check the email typed in, something is wrong.");
+    } else if (isNaN(parseInt(contact))) {
+      setUserMessage("Contact number must be provided!");
+    } else if (contact.length < 10 || contact.length > 10) {
+      setUserMessage("A valid contact number must be provided!");
+    } else if (message.length === 0) {
+      setUserMessage("Message must be provided!");
     } else {
-      navigate("/thanks");
+      emailjs
+        .sendForm(
+          "service_tq39byp",
+          "template_i77ylq8",
+          event.target,
+          "0ws-FsfLFaYkm7ueZ"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setshouldRedirect(true);
+          },
+
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   }
 
-  return (
-    <section
-      id="contact"
-      class="d-flex flex-wrap justify-content-center border-bottom "
-    >
-      <div class=" p-4 ">
-        <h2>Please complete contact form.</h2>
+  //   when the form is submitted the following line will reset the form fields
+  //   event.target.reset
 
-        <form>
-          <label>Name: </label>
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleOnChange}
-          ></input>
-          <br></br>
-          <label>Message:</label>
-          <textarea
-            type="textarea"
-            name="message"
-            rows="5"
-            cols="33"
-            value={message}
-            onChange={handleOnChange}
-          ></textarea>
-          <br></br>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleOnChange}
-          ></input>
+  return (
+    <>
+      {shouldRedirect && <Navigate to="/confirmation" />}
+
+      <Pagetitle
+        title="Contact Us"
+        description="and we'll respond with 1 business day"
+      />
+      <p style={{ color: "blue" }}>
+        <b>{userMessage}</b>
+      </p>
+
+      <div className="container">
+        <form onSubmit={sendEmail}>
+          <div>
+            <input
+              data-testid="firstName"
+              type="text"
+              className="form-control"
+              placeholder="First Name"
+              name="firstName"
+              value={firstName}
+              onChange={handleOnChange}
+            />
+          </div>
+          <div>
+            <input
+              data-testid="lastName"
+              type="text"
+              className="form-control"
+              placeholder="Last Name"
+              name="lastName"
+              value={lastName}
+              onChange={handleOnChange}
+            />
+          </div>
+          <div>
+            <input
+              data-testid="email"
+              type="email"
+              className="form-control"
+              placeholder="Email Address"
+              name="email"
+              value={email}
+              onChange={handleOnChange}
+            />
+          </div>
+          <div>
+            <input
+              type="tel"
+              data-testid="tel"
+              className="form-control"
+              placeholder="Contact Number"
+              name="contact"
+              value={contact}
+              onChange={handleOnChange}
+            />
+          </div>
+          <div>
+            <input
+              data-testid="message"
+              type="textarea"
+              cols="30"
+              row="8"
+              className="form-control"
+              placeholder="Message"
+              name="message"
+              value={message}
+              onChange={handleOnChange}
+            />
+          </div>
+          <div>
+            <Button
+              data-testid="button"
+              className="submit"
+              type="submit"
+              value="SEND MESSAGE"
+            >SEND MESSAGE</Button>
+          </div>
         </form>
       </div>
-
-      <div>
-        <h4>This is what you have entered:</h4>
-        <MessageCard
-          name={name}
-          message={message}
-          email={email}
-          textColour={textColour}
-          cardColour={cardColour}
-        />
-        <ColourChoicePanel
-          textColour={textColour}
-          cardColour={cardColour}
-          setTextColour={setTextColour}
-          setCardColour={setCardColour}
-        />
-
-        <p style={{ color: "blue" }}>
-          <b>{userMessage}</b>
-        </p>
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
-    </section>
+    </>
   );
 }
-
-export default Contact;

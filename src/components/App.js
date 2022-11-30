@@ -6,12 +6,13 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Home from "./Home";
 import NotFound from "./NotFound";
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
 import Image2 from "../Images/2nd_background_image.jpeg";
+import EmailSuccess from "./ContactSucess";
 
 const sections = [
   {
@@ -40,79 +41,51 @@ const sections = [
   },
 ];
 
-function LoadingPage() {
+
+function App()   {
   return (
-    <Container>
-      <header class="text-center text-lg-start bg-light text-muted">
-        <section class="d-flex flex-wrap justify-content-around border-bottom ">
-          <div>
-            <h1>Leith Price Portfolio</h1>
-          </div>
-          <div>
-            <h1>Loading...</h1>
+  <div className="App">
+    <div
+      style={{
+        backgroundImage: "url(" + Image2 + ")",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "100% 100%",
+      
+      }}
+    >
+      <Container>
+        <NavBar
+          title="Leith Price"
+          sections={sections}
+        ></NavBar>
+      </Container>
+
+      <Container>
+        <section className="d-flex flex-wrap justify-content-around border-bottom ">
+          <div
+            className="text-center p-4 w-100"
+          
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="portfolio" element={<Portfolio />} />
+              <Route path="reviews" element={<Reviews />} />
+              <Route path="education" element={<Education />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+              <Route path="/confirmation" element={<EmailSuccess />} />
+            </Routes>
           </div>
         </section>
-      </header>
-    </Container>
-  );
-}
+      </Container>
 
-function MainPage() {
-  return (
-    <div className="App">
-      <div
-        style={{
-          backgroundImage: "url(" + Image2 + ")",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
-        
-        }}
-      >
-        <Container>
-          <NavBar
-            title="Leith Price"
-            sections={sections}
-          ></NavBar>
-        </Container>
-
-        <Container>
-          <section class="d-flex flex-wrap justify-content-around border-bottom ">
-            <div
-              class="text-center p-4 w-100"
-            
-            >
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="about" element={<About />} />
-                <Route path="portfolio" element={<Portfolio />} />
-                <Route path="reviews" element={<Reviews />} />
-                <Route path="education" element={<Education />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </div>
-          </section>
-        </Container>
-
-        <Container>
-          <Footer></Footer>
-        </Container>
-      </div>
+      <Container>
+        <Footer></Footer>
+      </Container>
     </div>
-  );
-}
-
-function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    if (isLoading) {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1000);
-    }
-  });
-
-  return isLoading ? <LoadingPage /> : <MainPage />;
+  </div>
+);
 }
 
 export default App;
