@@ -40,7 +40,7 @@ function App() {
       style={{
         backgroundImage: "url(" + Image3 + ")",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 50vh",
+        backgroundSize: "100% 40vh",
       }}
     >
       <Container>
