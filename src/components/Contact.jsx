@@ -101,8 +101,8 @@ export default function Contact() {
       {shouldRedirect && <Navigate to="/confirmation" />}
 
       <Pagetitle
-        title="Contact Us"
-        description="and we'll respond with 1 business day"
+        title="Please reach out"
+        description="and I will respond with 1 business day"
       />
       <p style={{ color: "blue" }}>
         <b>{userMessage}</b>

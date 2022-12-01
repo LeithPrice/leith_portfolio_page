@@ -24,7 +24,7 @@ function NavBar(props) {
           >
             {sections.map((section, index) => (
               <div className="row" key={"section_" + index}>
-              <Nav.Link as={Link} to={section.url}>
+              <Nav.Link as={Link} to={section.url} style={{  justifyContent: "space-between", paddingLeft:"50px" }}>
                 {section.title}
               </Nav.Link>
               </div>
