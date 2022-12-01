@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../Images/LeithPriceimage.jpg";
+import Image from "../Images/Leith_Price_Image.png";
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
           <div className=" col-md-12 col-lg-12 col-xl-12 mx-auto mb-4">
             <div className="mt-3">
               <h1>
-                I'm Leith Price a Junior Web Developer from Brisbane, Australia
+                I'm Leith, a Junior Web Developer from Brisbane, Australia
               </h1>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+     </section>
   );
 };
 

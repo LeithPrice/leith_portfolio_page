@@ -19,7 +19,7 @@ function NavBar(props) {
         <Navbar.Collapse id="navbarScroll" style={{ paddingLeft:"10px"}}>
           <Nav
             className="mr-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px", justifyContent: "space-between" }}
+            style={{ maxHeight: "200px", justifyContent: "space-between", paddingLeft:"20px" }}
             navbarScroll
           >
             {sections.map((section, index) => (

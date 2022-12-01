@@ -3,6 +3,7 @@ import Image1 from "../Images/Original_portfolio_page.png";
 import Image2 from "../Images/Terminal_app.png";
 import Image3 from "../Images/Revonate_rails_app.png";
 import Image4 from "../Images/React_portfolio_app.png";
+import Image5 from "../Images/Image5.png";
 
 const Portfolio = () => {
   return (
@@ -31,10 +32,19 @@ const Portfolio = () => {
             <i className="fab fa-github"> Github Repository</i>
           </a>
           <p>
-            This was an excellent opportunity to show what i had learned at
-            Coder academy. Creating a Portfolio webpage that had responsive
-            design allowed me to showcase my skills in HTML, CSS and SASS
+            This was an excellent opportunity to show what i had initially learned at
+            Coder Academy. Creating a Portfolio webpage that had responsive
+            design allowed me to showcase my new skills in HTML, CSS and SASS
           </p>
+          <a
+            href="https://leithprice.netlify.app
+          "
+            target="_blank"
+            rel="noreferrer"
+            className="me-4 text-reset"
+          >
+            <i> Deployed site</i>
+            </a>
         </div>
         <div
           className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
@@ -94,6 +104,14 @@ const Portfolio = () => {
             photos and buy / sell history. Authorisation protocols are also in
             place for restricted CRUD actions.
           </p>
+          <a
+            href="https://revonate.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="me-4 text-reset"
+          >
+            <i> Deployed site</i>
+            </a>
         </div>
         <div
           className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
@@ -122,6 +140,14 @@ const Portfolio = () => {
             knowledge with Vanilla Javascript, React and Bootstrap. With my
             understanding of HTML and CSS, i am happy with the final product.
           </p>
+          <a
+            href="https://leithpriceV2.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+            className="me-4 text-reset"
+          >
+            <i> Deployed site</i>
+            </a>
         </div>
         <div
           className="col-md-4 col-lg-4 col-xl-6 mx-auto mb-4 border"
@@ -132,24 +158,42 @@ const Portfolio = () => {
             className="mt-3"
           >
             <h1>Project Five</h1>
-            <h3>Full Stack project</h3>
+            <h3>Online Booking System</h3>
           </div>
           <div className="image">
             <img
-              src="/images/ambulance2.jfif"
+              src={Image5}
               className="img-fluid"
               alt="one"
             ></img>
           </div>
           <a
-            href="https://www.github.com/LeithPrice "
+            href="https://github.com/LeithPrice/pink-sunrise-dentistry-api"
             target="_blank"
             rel="noreferrer"
             className="me-4 text-reset"
           >
-            <i className="fab fa-github"> Github Repository</i>
+            <i className="fab fa-github"> Github Repository for Back-end</i>
           </a>
-          <p>To Be Completed, Will be updated November 28th 2022.</p>
+          <a
+            href="https://github.com/HardeepSinghAu/pink-sunrise-dentistry"
+            target="_blank"
+            rel="noreferrer"
+            className="me-4 text-reset"
+          >
+            <i className="fab fa-github"> Github Repository for Front-end</i>
+          </a>
+          
+          <p>This website advertises a fictional dentistry and has features such as user login and registration as well as automated emails sent from contact form and booking confirmation. The primary feature is the automated online appointment booking system that allows users to see available times to book for specific doctors and dates. Once the appointment is booked, a confirmation email is set to the user, the time is removed from availability  and is added to the users appointment history tab.</p>
+          <a
+            href="https://pink-sunrise-dentistry.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+            className="me-4 text-reset"
+          >
+            <i> Deployed site</i>
+          </a>
+         
         </div>
       </div>
     </section>

@@ -92,10 +92,12 @@ const Footer = (props) => {
                   </a>
                 </p>
                 <p>
-                  <a href="https://en.wikipedia.org/wiki/JavaScript"
+                  <a
+                    href="https://en.wikipedia.org/wiki/JavaScript"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-reset">
+                    className="text-reset"
+                  >
                     Javascript
                   </a>
                 </p>
@@ -106,34 +108,42 @@ const Footer = (props) => {
                   Frameworks and Libraries
                 </h6>
                 <p>
-                  <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails"
+                  <a
+                    href="https://en.wikipedia.org/wiki/Ruby_on_Rails"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-reset">
+                    className="text-reset"
+                  >
                     Ruby on Rails
                   </a>
                 </p>
                 <p>
-                  <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
+                  <a
+                    href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-reset">
+                    className="text-reset"
+                  >
                     React.js
                   </a>
                 </p>
                 <p>
-                  <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                  <a
+                    href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-reset">
+                    className="text-reset"
+                  >
                     Bootstrap 5
                   </a>
                 </p>
                 <p>
-                  <a href="https://en.wikipedia.org/wiki/Node.js"
+                  <a
+                    href="https://en.wikipedia.org/wiki/Node.js"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-reset">
+                    className="text-reset"
+                  >
                     Node.js
                   </a>
                 </p>
@@ -146,11 +156,15 @@ const Footer = (props) => {
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3"></i>
-                  <a href="mailto:leith.price@gmail.com" className="text-reset">leith.price@gmail.com</a>
+                  <a href="mailto:leith.price@gmail.com" className="text-reset">
+                    leith.price@gmail.com
+                  </a>
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3"></i> 
-                  <a href="tel:0421547423" className="text-reset">+61 421 547 423</a>
+                  <i className="fas fa-phone me-3"></i>
+                  <a href="tel:0421547423" className="text-reset">
+                    +61 421 547 423
+                  </a>
                 </p>
               </div>
             </div>
@@ -162,8 +176,11 @@ const Footer = (props) => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
         >
           <Copyright />
-          <a className="text-reset fw-bold" href="https://leithprice.netlify.app/">
-            Leithprice.netlify.app
+          <a
+            className="text-reset fw-bold"
+            href="https://leithpriceV2.netlify.app/"
+          >
+            leithpriceV2.netlify.app
           </a>
         </div>
       </footer>
