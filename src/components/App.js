@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
-import Image3 from "../Images/cool-background.png";
+
 import "./app.css";
 
 import EmailSuccess from "./ContactSucess";
@@ -36,13 +36,8 @@ const sections = [
 
 function App() {
   return (
-    <div
-      style={{
-        backgroundImage: "url(" + Image3 + ")",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 40vh",
-      }}
-    >
+  
+    <div>
       <Container>
         <NavBar title="Leith Price" sections={sections}></NavBar>
       </Container>

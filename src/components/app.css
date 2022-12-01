@@ -7,9 +7,9 @@ body{
     height: 100vh;
     background: linear-gradient(
         to right,
-        pink 0%,
-        pink 50%,
-        skyblue 50%,
-        skyblue 100%
+        #2ab7ca 0%,
+        #2ab7ca 50%,
+        #e6e6ea 50%,
+        #e6e6ea 100%
     )
 }

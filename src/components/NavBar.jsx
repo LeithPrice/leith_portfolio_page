@@ -10,7 +10,7 @@ function NavBar(props) {
       <Navbar
         variant={"light"}
         expand="lg"
-        style={{ justifyContent: "space-between", backgroundColor: "teal", paddingTop: "10px"}}
+        style={{ justifyContent: "space-between", backgroundColor: "#fe4a49", padding: "10px"}}
       >
         <Navbar.Brand href="/" style={{ padding: "10px", color: "Black", fontSize: "40px" }}>
           {title}

@@ -1,14 +1,7 @@
 import React from "react";
-import Image3 from "../Images/cool-background.png";
 
-function Copyright() {
-  return (
-    <h3 variant="body2" color={"purple"} align="center">
-      {"Copyright © Leith Price "}
-      {new Date().getFullYear()}
-    </h3>
-  );
-}
+
+
 
 const Footer = (props) => {
   return (
@@ -48,7 +41,7 @@ const Footer = (props) => {
         </section>
 
         <section className="">
-          <div className="container text-center text-md-start mt-5" style={{ backgroundImage: "url(" + Image3 + ")",}}>
+          <div className="container text-center text-md-start mt-5" style={{ padding:"10px", backgroundColor: "#fed766"}}>
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
@@ -172,18 +165,7 @@ const Footer = (props) => {
           </div>
         </section>
 
-        {/* <div
-          className="text-center p-4"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
-        >
-          <Copyright />
-          <a
-            className="text-reset fw-bold"
-            href="https://leithpriceV2.netlify.app/"
-          >
-            leithpriceV2.netlify.app
-          </a>
-        </div> */}
+     
       </footer>
     </div>
   );
