@@ -49,7 +49,7 @@ function App() {
 
       <Container>
         <section className="d-flex flex-wrap justify-content-around border-bottom ">
-          <div className="text-center p-4 w-100">
+          <div className="text-center w-100">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About />} />
